@@ -9,33 +9,29 @@
 				$( "#datepicker" ).datepicker();
 			});
 		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 		<h1>Contingent Workforce Portal</h1>
-		<div id="employee">
-			<form>
-			<label>I have time:</label>
-			<input type="text" ng-model="yourTime" placeholder="Enter your free time">
-			<label>Name:</label>
-			<input type="text" ng-model="employeeName" placeholder="Enter your name">
-			<h1>My available time is {{yourTime}}</h1>
-			<h1>My name is {{employeeName}}</h1>
-			</form>
-		</div>
-		<hr>
 		<div id="employer">
-			<form>
-			<label>I have work:</label>
-			<input type="text" ng-model="yourWork" placeholder="Enter your job">
-			<label>Employer:</label>
-			<input type="text" ng-model="employerName" placeholder="Enter your company">
-			<h1>My available work is {{yourWork}}</h1>
-			<h1>My company is {{employerName}}</h1>
+			<form style="text-align:center">
+			<fieldset>
+			<label for="txtCompany">Company</label><input type="text" name="txtClassroomName" size="20">
+			<label for="txtPosition">Position</label><input type="text" name="txtSchoolName" size="20">
+			<label for="txtSkillSet">Skill Set</label><input type="text" name="txtSchoolEmail" size="20">
+			<label for="txtDate">Date</label><input type="text" name="txtSchoolAddress" size="20">
+			<label for="txtTime">Time</label><input type="text" name="txtTelephoneNumber" size="20">
+			<label for="txtHeadCount">Head Count</label><input type="text" name="txtSchoolEmail" size="20">
+			<label for="txtRate">Rate</label><input type="text" name="txtSchoolAddress" size="20">
+			<label for="txtLoction">Location</label><input type="text" name="txtTelephoneNumber" size="20">
+			</fieldset>
+			<input type="submit" value="Submit">
 			</form>
 		</div>
 		<hr>
-		<div id="match">
-			<h1>Match {{employeeName}} to {{employerName}} at {{yourTime}} for {{yourWork}}</h1>
+		<div id="response">
+		<script>
+		</script>
 		</div>
 	</body>
 </html>
